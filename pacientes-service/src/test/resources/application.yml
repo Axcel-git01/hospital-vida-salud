@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: pacientes-service
+  r2dbc:
+    url: r2dbc:h2:mem:///pacientes_test;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+  sql:
+    init:
+      mode: always
+  cloud:
+    discovery:
+      enabled: false
+eureka:
+  client:
+    enabled: false

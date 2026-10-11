@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: citas-service
+  r2dbc:
+    url: r2dbc:h2:mem:///citas_test;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ""
+  sql:
+    init:
+      mode: always
+  cloud:
+    discovery:
+      enabled: false
+eureka:
+  client:
+    enabled: false

@@ -1,0 +1,4 @@
+# Evita que Windows rompa el wrapper (CRLF en scripts de shell)
+mvnw       text eol=lf
+mvnw.cmd   text eol=crlf
+*.sh       text eol=lf
