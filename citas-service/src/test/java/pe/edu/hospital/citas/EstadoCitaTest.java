@@ -20,7 +20,7 @@ class EstadoCitaTest {
 
     @Test
     void citaCanceladaNoPuedeConfirmarse() {
-        assertTrue(EstadoCita.CANCELADA.puedeTransicionarA(EstadoCita.CONFIRMADA));
+        assertFalse(EstadoCita.CANCELADA.puedeTransicionarA(EstadoCita.CONFIRMADA));
     }
 
     @Test
